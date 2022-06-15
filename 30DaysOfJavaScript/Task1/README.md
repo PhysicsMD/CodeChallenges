@@ -1,4 +1,4 @@
-# 💻 Day 1: Exercises
+# 💻 Task 1: Exercises
 
 1. Write a single line comment which says, _comments can make code readable_
 2. Write another single comment which says, _Welcome to 30DaysOfJavaScript_
