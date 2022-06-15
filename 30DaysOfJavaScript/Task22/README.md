@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 22: Exercises
 
 ### Exercises: Level 1
 

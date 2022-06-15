@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 10: Exercises
 
 ### Exercises:Level 1
 

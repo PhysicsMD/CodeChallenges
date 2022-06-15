@@ -1,4 +1,4 @@
-## 💻 Exercises
+# 💻 Task 7: Exercises
 
 ### Exercises: Level 1
 

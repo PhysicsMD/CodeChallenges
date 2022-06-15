@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 16: Exercises
 
 ```js
 const skills = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']

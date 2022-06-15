@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 30: Exercises
 
 ### Exercise: Level 1
 

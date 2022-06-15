@@ -1,4 +1,5 @@
-## 💻 Exercises
+# 💻 Task 9: Exercises
+
 ### Exercises: Level 1
 ```js
 const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']

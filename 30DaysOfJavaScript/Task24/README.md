@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 24: Exercises
 
 ### Exercise: Level 1
 

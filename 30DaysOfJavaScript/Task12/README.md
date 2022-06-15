@@ -1,4 +1,4 @@
-## 💻 Exercises
+# 💻 Task 12: Exercises
 
 ### Exercises: Level 1
 

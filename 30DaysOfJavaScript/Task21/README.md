@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 21: Exercises
 
 ### Exercise: Level 1
 

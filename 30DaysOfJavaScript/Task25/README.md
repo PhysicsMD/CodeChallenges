@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 25: Exercises
 
 ### Exercise: Level 1
 

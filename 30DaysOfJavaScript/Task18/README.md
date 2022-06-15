@@ -1,4 +1,4 @@
-## Exercises
+# 💻 Task 18: Exercises
 
 ```js
 const countriesAPI = 'https://restcountries.com/v2/all'
