@@ -1,10 +1,7 @@
 from ctypes.wintypes import RGB
-from xml.etree.ElementTree import PI
 import pygame
 import time
-import math
 
-# Class Star
 from snake import *
 
 # PYGAME INITIALIZATION
