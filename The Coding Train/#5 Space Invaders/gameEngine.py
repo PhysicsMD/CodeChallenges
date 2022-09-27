@@ -5,6 +5,7 @@ import time
 import sys
 
 from score import *
+from sounds import *
 
 class GEngine:
    def __init__(self, screen, BoundsX, BoundsY, PIXEL_SCALE):
