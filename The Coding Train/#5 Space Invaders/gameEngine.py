@@ -76,8 +76,16 @@ class GEngine:
          elif(self.menu_pointer != 2):
             self.window.blit(self.arcade_font.render("Exit", True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*4)/2, self.BoundsY*self.PIXEL_SCALE - self.text_size*4))
       if(self.state == "Game"):
-         pygame.quit()
-         sys.exit()
+         self.window.blit(self.arcade_font.render("Hi-Score", True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*8)/4, self.text_size*0))
+         self.window.blit(self.arcade_font.render("Score", True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*5)*3/4, self.text_size*0))
+         self.window.blit(self.arcade_font.render((" " + "0"*(6-len(self.scoreBoard.scoreAt(0)[2]))+self.scoreBoard.scoreAt(0)[2] + " "), True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*8)/4, self.text_size*1))
+         self.window.blit(self.arcade_font.render("000000", True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*5)*3/4, self.text_size*1))
+         pygame.draw.line(self.window, (255,255,255), (0,self.text_size*2.5), (self.BoundsX*self.PIXEL_SCALE,self.text_size*2.5), self.PIXEL_SCALE)
+         pygame.draw.line(self.window, (255,255,255), (0,self.BoundsY*self.PIXEL_SCALE - self.text_size*2), (self.BoundsX*self.PIXEL_SCALE,self.BoundsY*self.PIXEL_SCALE - self.text_size*2), self.PIXEL_SCALE)
+
+         lives = 3
+         self.window.blit(self.arcade_font.render(str(lives), True, (255, 255, 255)), ((self.text_size), self.BoundsY*self.PIXEL_SCALE - self.text_size*1.8))
+
       if(self.state == "Scores"):
          title = pygame.image.load(os.path.join("images", 'si_logo.png'))
          title = pygame.transform.scale(title, (self.BoundsX*self.PIXEL_SCALE*.6, self.BoundsY*.3*self.PIXEL_SCALE))
@@ -87,7 +95,15 @@ class GEngine:
 
          self.window.blit(self.arcade_font.render("HighScores", True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*10)/2, self.BoundsY*self.PIXEL_SCALE - self.text_size*17))
 
-         
+         for i in range(10):
+            score = self.scoreBoard.scoreAt(i)
+            scorestring = score[0] + " " + score[1]
+            scorestring += "."*(8-len(score[2])) + score[2]
+
+            if(i == 0):
+               self.window.blit(self.arcade_font.render(scorestring, True, (255, 0, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*len(scorestring))/2, self.BoundsY*self.PIXEL_SCALE - self.text_size*(14-1.2*i)))
+            else:
+               self.window.blit(self.arcade_font.render(scorestring, True, (255, 255, 255)), ((self.BoundsX*self.PIXEL_SCALE-self.text_size*len(scorestring))/2, self.BoundsY*self.PIXEL_SCALE - self.text_size*(14-1.2*i)))
 
       if(self.state == "Exit"):
          pygame.quit()
